@@ -55,15 +55,13 @@ gsap.from(".scaler",{
         duration:1.2
     })
 
-   const animatedNav = ()=>{
     gsap.from("nav",{
         y:-100,
         opacity:0,
-        duration:1.2,
-        position:fixed
+        duration:1.2
     })
-   }
-animatedNav()
+
+
 
 
 
