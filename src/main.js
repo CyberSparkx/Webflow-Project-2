@@ -64,6 +64,28 @@ gsap.from(".scaler",{
 
 
 
+// JS
+
+const sandar = document.getElementsByClassName("sandar");
+const floww = document.getElementsByClassName("floww");
+
+for (let i = 0; i < sandar.length; i++) {
+  sandar[i].addEventListener("mouseenter", () => {
+    if (floww[i]) {
+      floww[i].style.opacity = "1";
+    }
+  });
+
+}
+
+for (let i = 0; i < sandar.length; i++) {
+  sandar[i].addEventListener("mouseleave", () => {
+    if (floww[i]) {
+      floww[i].style.opacity = "0";
+    }
+  });
+
+}
 
 
 
